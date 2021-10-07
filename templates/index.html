@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <title>AnitArt</title>
+  <link rel="icon" href="{{ url_for('static', filename='img/national-park.png')}}">
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Our CSS -->
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css')}}">
+  
+</head>
+<body>
+
+  <div class="card text-center">
+    <div class="card-header">
+      <ul class="nav nav-tabs card-header-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/standouts">Standouts</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/100list">100's List</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/interviews">Interviews</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/reviews">Reviews</a>
+        </li>
+      </ul>
+    </div>
+    {% comment %} <div class="card-body">
+      <h5 class="card-title">NATIONAL PARK </h5>
+      <h6 class="card-title"><b>EXPLORER'S MAP</b></h6>
+      <img src="{{url_for('static', filename='img/key.png')}}" alt="wrapkit" />      <!-- <br> -->
+      <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+    </div> {% endcomment %}
+  </div>
